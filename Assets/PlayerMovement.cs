@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > canJump)
         {
             rb.AddForce(new Vector3(0, 7, 0), ForceMode.Impulse);
-            canJump = Time.time + 1.5f;
+            canJump = Time.time + 1.5f; // canJump = 1.5f so there is a delay on jump (no flying)
         }
     }
 }
